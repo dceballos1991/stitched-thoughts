@@ -44,6 +44,12 @@ export default function StartWriting() {
             ],
           }),
         });
+        setContent("");
+        setTitle("");
+        setAuthor("");
+        setIsWriting(false);
+        // Refresh the pieces list after saving
+        // This is a workaround since we don't have a global state management in this example
         router.refresh();
       } catch (error) {
         console.error(error);
