@@ -3,8 +3,8 @@ type Author = {
   id: string;
 };
 
-const AUTHORS = [];
+const AUTHORS: Author[] = [];
 
-export async function GET(_request: Request) {
+export async function GET() {
   return Response.json({ authors: AUTHORS });
 }

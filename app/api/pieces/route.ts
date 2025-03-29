@@ -49,7 +49,7 @@ const PIECES_ARRAY: Piece[] = [
   },
 ];
 
-export async function GET(_request: Request) {
+export async function GET() {
   return Response.json({
     pieces: PIECES_ARRAY,
   });
