@@ -8,7 +8,8 @@ export default function Home() {
         Stitched Thoughts
       </h1>
       <StartWriting />
-      <Pieces key={Math.random()} />
+      <Pieces key={Math.random()} />{" "}
+      {/*Temporary workaround, Force re-render on each load */}
     </div>
   );
 }
